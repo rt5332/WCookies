@@ -71,7 +71,7 @@
                width:100%;
   </style>
 <body>
-  <h1 class="header">Choose Your Path at Windy City Cookies!</h1>
+  <h1 class="header">Corporate Opportunities</h1>
 <style>
  .header{
    padding-top: 20px;
@@ -81,57 +81,81 @@
 </style>
 </body>
 <div class="cont">
-  <div class="img-1 split">
-<img src="https://thecravory.com/cdn/shop/files/FAQs_-_Careers.png?v=1697824631&width=1800" class="imgs img1"></a>
-  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <h3>Card 1</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
 
-  <div class="img-2 split">
-    <img src="https://s31345.pcdn.co/wp-content/uploads/Business-woman-presenting-to-colleagues-in-meeting-room-1-1024x454.jpg.optimal.jpg" class="imgs">
+    <div class="column">
+      <div class="card">
+        <h3>Card 2</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
 
+    <div class="column">
+      <div class="card">
+        <h3>Card 3</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
 
+    <div class="column">
+      <div class="card">
+        <h3>Card 4</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
   </div>
 </div>
-<style>
-  .split{
-    flex: 1;
-    border: 2px green;
-    padding: 20px;
-
-  }
-  .img-1{
-    margin-right: 20px;
-    display: inline-block; /* change the default display type to inline-block */
-
-
-
-  }
-  .img1{
-    object-fit: cover !important;
-
-
-  }
-  .imgs:hover{
-    opacity: 0.5;
-    cursor:pointer;
-  }
-  .imgs{
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    transition:
-      opacity 1s
-  }
-  .cont{
-    display: flex;
-  }
-  .center1{
-    background-color:rgba(255, 255, 255, 0.5);
-    padding:20px;
-    text-align:center;
-    position: absolute;
-    top:60%;
-    right:75%;
-    transform:translate(50%, -25%);
+  
+  <style>
+  * {
+    box-sizing: border-box;
   }
 
-</style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Style the counter cards */
+  .card {
+    padding: 16px;
+    text-align: center;
+    background-color: coral;
+    border-radius: 10px;
+  }
+  </style>
